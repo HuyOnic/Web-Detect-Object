@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %} Object Detection {% endblock %}
+{% block content %}
+<div class="d-flex justify-content-center">
+    <div class="d-flex flex-column align-items-center">
+        <h1>Upload Image</h1>
+        <div class="img_slider" id="imagePreview">
+            {% if filename %}
+            <img class="img" src="{{url_for('static', filename=filename)}}" />
+            {% endif %}
+        </div>
+        <form class="form" method=post enctype=multipart/form-data>
+            <input type=file name=file value="Upload file" id="file" class="inputfile" accept="image/*">
+            <label for="file">Choose a file</label>
+            <input type=submit value="Object Detection" class="btn__upload" />
+        </form>
+
+    </div>
+</div>
+<script src="./../static/scripts/index.js"></script>
+<script src="./../static/scripts/img_preview.js"></script>
+{% endblock %}

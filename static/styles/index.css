@@ -1,0 +1,61 @@
+.img_slider
+{
+    width: 900px;
+    height: 600px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+.form 
+{
+    margin-top: 20px;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    opacity: .5;
+}
+.btn__upload
+{
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: green;
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .2s;
+}
+.preview
+{
+    width: 900px;
+    height: 600px
+}
